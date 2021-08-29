@@ -1,0 +1,296 @@
+
+
+
+
+
+<html>
+  <head>
+    <title>homeairworld</title>
+<script>
+
+        function required()
+{
+var user = document.form1.user.value;
+if (user === "")
+{
+alert("Please enter the Name");
+document.getElementById("user").focus();
+return false;
+}
+var email = document.form1.email.value;
+if (email === "")
+{
+alert("Please enter the Mail ID");
+document.getElementById("email").focus();
+return false;
+}
+var phone = document.form1.phone.value;
+if (phone === "")
+{
+alert("Please enter the Phone Number");
+document.getElementById("phone").focus();
+return false;
+}
+var address = document.form1.address.value;
+if (address === "")
+{
+alert("Please enter the Address");
+document.getElementById("address").focus();
+return false;
+}
+var gender = document.form1.gender.value;
+if (gender === "")
+{
+alert("Please enter the Gender");
+document.getElementById("gender").focus();
+return false;
+}
+var seattype = document.form1.seattype.value;
+if (seattype === "")
+{
+alert("Please enter the Seat Type");
+document.getElementById("seattype").focus();
+return false;
+}
+var day = document.form1.day.value;
+if (day === "")
+{
+alert("Please enter the Date of Journey");
+document.getElementById("day").focus();
+return false;
+}
+var fromcity = document.form1.fromcity.value;
+var tocity = document.form1.tocity.value;
+if (fromcity === tocity)
+{
+alert("From and To places can't be same");
+document.getElementById("day").focus();
+return false;
+}
+window.open("finalform.html");
+}
+   
+</script>
+    <style>
+      /* Style the header with a grey background and some padding */
+.header {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 20px 10px;
+}
+
+/* Style the header links */
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+  font-family: Tahoma, Sans-Serif;
+}
+
+/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/* Change the background color on mouse-over */
+.header a:hover {
+  background-color: #35F608;
+  color: black;
+}
+
+
+.header a.active {
+  background-color: #11D846;
+  color: white;
+}
+
+
+.header-right {
+  float: right;
+}
+
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+}
+
+body{
+
+  background-image: url("https://airbus-h.assetsadobe2.com/is/image/content/dam/events/conference/press-conference/AirbusZEROe-turboprop-concept-2.jpg?wid=1920&fit=fit,1&qlt=85,0");no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+.maincontent{
+background-color:white;
+font-family: Tahoma,Sans-Serif;
+margin-top: 50px;
+border-radius: 15px;
+opacity: 0.5;
+padding-bottom: 10px
+
+}
+.maincontent:hover{
+background-color:#A2FFAA;
+margin-top: 50px;
+font-family: Tahoma,Sans-Serif;
+border-radius: 15px;
+opacity: 1;
+padding-bottom: 10px
+}
+
+.button:hover {
+  background-color: #35F608; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  opacity: 1;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.newsandupdates{
+background-color:white;
+font-family: Tahoma,Sans-Serif;
+border-radius: 15px;
+opacity: 0.5;
+padding-bottom: 10px
+
+}
+.newsandupdates:hover{
+background-color:white;
+font-family: Tahoma,Sans-Serif;
+border-radius: 15px;
+opacity: 1;
+padding-bottom: 10px
+}
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: white;
+   color: black;
+   text-align: center;
+   border-radius: 7px;
+}
+.cuath{
+align:left;
+}
+
+.cuath:hover{
+-align:left;
+color:#35F608
+}
+.auath{
+align:right;
+}
+
+.auath:hover{
+align:right;
+color:#35F608
+}
+input[type=submit] {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+</style>
+
+    
+  </head>
+  <body>
+     <div class="header">
+  <a href="#default" class="logo">AIRWORLD.com</a>
+  <div class="header-right">
+    <a  href="home.html">Home</a>
+    <a href="contactus.html">Contact</a>
+    <a href="about-us.html">About US</a>
+    <a class="active" href="#booking">Book a Ticket</a>
+    <a href="faq.html">FAQ</a>
+</div></div><br>
+
+
+
+
+<div class="maincontent">
+<h1 style="color:green;font-family:Tahoma,Sans-Serif">Book your Journey</h1>
+<table>
+ <form  name="form1" action="#" onsubmit="required()">
+<tr><td><label for="user">Name:</label></td><td><input type="text" style="border:2px solid green;" id="user" name="user" placeholder="(eg)Johnsohn M" title="Enter your Name"></td></tr>
+<tr><td><label for="email">Email:</label></td><td><input type="text" style="border:2px solid green;" id="email" name="email" placeholder="(eg)johnson@amail.com title="Enter Valid Mail ID" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$""></td></tr>
+<tr><td><label for="phone">Phone No:</label></td><td><input type="text" style="border:2px solid green;" id="phone" name="phone" placeholder="(eg)9999999999" title="Enter Valid Phone No" pattern="[1-9]{1}[0-9]{9}"></td></tr>
+<tr><td><label for="address">Address:</label></td><td><input type="text" style="border:2px solid green;" id="address" name="address" placeholder="(eg)4/15,East St,London."title="Enter Valid Address" ></td></tr>
+<tr><td><label for="gender">Gender:</label></td><td><input type="radio" id="mas" name="gender" value="mas"><label for="mas">Male</label><input type="radio" id="fem" name="gender" value="fem"><label for="fem">Female</label><input type="radio" id="third" name="gender" value="third"><label for="third">Other</label></td></tr>
+<tr><td><label for="fromcity">From:</label></td><td><select name="fromcity" id="fromcity">
+    <option value="chennai">CHENNAI</option>
+    <option value="mumbai">MUMBAI</option>
+    <option value="delhi">DELHI</option>
+    <option value="kolkata">KOLKATA</option>
+    <option value="bangalore">BENGALURU</option>
+    <option value="hyderabad">HYDERABAD</option>
+    <option value="jaipur">JAIPUR</option>
+    <option value="cochin">KOCHI</option>
+  </select></td></tr>
+<tr><td><label for="tocity">To:</label></td><td><select name="tocity" id="tocity" >
+    <option value="kolkata">KOLKATA</option>
+    <option value="chennai">CHENNAI</option>
+    <option value="mumbai">MUMBAI</option>
+    <option value="delhi">DELHI</option>
+    <option value="bangalore">BENGALURU</option>
+    <option value="hyderabad">HYDERABAD</option>
+    <option value="jaipur">JAIPUR</option>
+    <option value="cochin">KOCHI</option></td></tr>
+<tr><td><label for="seattype">Class:</label></td><td><input type="radio" id="eco" name="seattype" value="eco"><label for="eco">Economic</label><input type="radio" id="sec" name="seattype" value="sec"><label for="sec">Sub Economic</label><input type="radio" id="bus" name="seattype" value="bus"><label for="bus">Business Class</label></td></tr>
+<tr><td><label for="day">Date:</label></td><td><input type="date" name="day" id="day" value="day"></td></tr>
+<tr><td><label for="quantity">No of Seats:</label></td><td><input type="number" min="1" max="100" value="1" class="slider" id="quantity" name="quantity"></td></tr>
+<tr><td><input type="submit" name="submit" value="Book Now" />
+</form>
+</table>
+</div>
+<div class="newsandupdates"><p>
+<h1>OFFERS AND INFOS</h1>
+<marquee width="60%" direction="up" height="100px" ><p style="color:Green;font-family:Tahoma,Sans-Serif">
+TRAVEL TO ABROAD IS RESTRICTED BY INDIAN GOVERNMENT AS COVID 19 PRECAUTION NORMS'
+<br>
+<br>
+10% Special offer upto September 15
+<br>
+<br>
+25% Special offer for all women upto 1 October
+<br>
+<br>
+Travel Combo pack at Rs.19999/-
+<br>
+<br>
+Food willbe free of cost including Beverages at all International Flights
+</p>
+</marquee>
+</p></div>
+
+<div class="footer" style="color:black;font-family:Tahoma,Sans-Serif;">
+  <a href=" https://mail.google.com/mail/u/0/#inbox" class="cuath"><div style="text-align:left;">contact us:airworld@airmail.com</a></div><div style="text-align:right;"><a href="about-us.html" class="auath">About Us</a></div>
+</div>
+</body>
+</html>
